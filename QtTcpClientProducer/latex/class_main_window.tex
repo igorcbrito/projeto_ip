@@ -1,0 +1,99 @@
+\hypertarget{class_main_window}{}\section{Referência à classe Main\+Window}
+\label{class_main_window}\index{Main\+Window@{Main\+Window}}
+
+
+Derivada de Q\+Main\+Window.
+
+\subsection*{Slots públicos}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_main_window_afdfeb13ec363b0eb8ecacaf0aa13b605}{put\+Data} ()
+\item 
+void \hyperlink{class_main_window_a79fdaf1fd769f0584f50da34e415b3de}{stop\+Data} ()
+\item 
+Q\+String \hyperlink{class_main_window_a2bf0fb2c40fb08b96f95f65d9ee1c979}{get\+IP} ()
+\item 
+void \hyperlink{class_main_window_ac5b669957c442b6eb68573dacfce33e1}{tcp\+Connect} ()
+\item 
+void \hyperlink{class_main_window_a4d22c4c7afc7ba0a2fa4c70515c85dda}{tcp\+Disconnect} ()
+\item 
+void \hyperlink{class_main_window_aaa425b1554af3c1f58cc70b4815082ae}{timer\+Event} (Q\+Timer\+Event $\ast$event)
+\end{DoxyCompactItemize}
+\subsection*{Membros públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_main_window_a8b244be8b7b7db1b08de2a2acb9409db}\label{class_main_window_a8b244be8b7b7db1b08de2a2acb9409db}} 
+{\bfseries Main\+Window} (Q\+Widget $\ast$parent=0)
+\end{DoxyCompactItemize}
+
+
+\subsection{Documentação dos métodos}
+\mbox{\Hypertarget{class_main_window_a2bf0fb2c40fb08b96f95f65d9ee1c979}\label{class_main_window_a2bf0fb2c40fb08b96f95f65d9ee1c979}} 
+\index{Main\+Window@{Main\+Window}!get\+IP@{get\+IP}}
+\index{get\+IP@{get\+IP}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{get\+IP}{getIP}}
+{\footnotesize\ttfamily Q\+String Main\+Window\+::get\+IP (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Recupera o IP digitado na caixa no campo do mesmo.
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em ip} & armazena o IP recuperado no campo de inserção do IP.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_main_window_afdfeb13ec363b0eb8ecacaf0aa13b605}\label{class_main_window_afdfeb13ec363b0eb8ecacaf0aa13b605}} 
+\index{Main\+Window@{Main\+Window}!put\+Data@{put\+Data}}
+\index{put\+Data@{put\+Data}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{put\+Data}{putData}}
+{\footnotesize\ttfamily void Main\+Window\+::put\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em tempo} & Armazena o intervalo de recebimento entre um dado e o outro selecionado no slider.\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_main_window_a79fdaf1fd769f0584f50da34e415b3de}\label{class_main_window_a79fdaf1fd769f0584f50da34e415b3de}} 
+\index{Main\+Window@{Main\+Window}!stop\+Data@{stop\+Data}}
+\index{stop\+Data@{stop\+Data}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{stop\+Data}{stopData}}
+{\footnotesize\ttfamily void Main\+Window\+::stop\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Finaliza a transmissão de dados.\mbox{\Hypertarget{class_main_window_ac5b669957c442b6eb68573dacfce33e1}\label{class_main_window_ac5b669957c442b6eb68573dacfce33e1}} 
+\index{Main\+Window@{Main\+Window}!tcp\+Connect@{tcp\+Connect}}
+\index{tcp\+Connect@{tcp\+Connect}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{tcp\+Connect}{tcpConnect}}
+{\footnotesize\ttfamily void Main\+Window\+::tcp\+Connect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+connect\+To\+Host(get\+I\+P(),1234) Chama a função get\+IP para pegar o valor digitado no espaço gráfico. É acionado quando o botão conectar é pressionado.
+
+wait\+For\+Connected(3000) Verifica se a conexão está estabelecida\mbox{\Hypertarget{class_main_window_a4d22c4c7afc7ba0a2fa4c70515c85dda}\label{class_main_window_a4d22c4c7afc7ba0a2fa4c70515c85dda}} 
+\index{Main\+Window@{Main\+Window}!tcp\+Disconnect@{tcp\+Disconnect}}
+\index{tcp\+Disconnect@{tcp\+Disconnect}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{tcp\+Disconnect}{tcpDisconnect}}
+{\footnotesize\ttfamily void Main\+Window\+::tcp\+Disconnect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+Finaliza a conexão com o servidor. É acionado quando o botão desconectar é pressionado.\mbox{\Hypertarget{class_main_window_aaa425b1554af3c1f58cc70b4815082ae}\label{class_main_window_aaa425b1554af3c1f58cc70b4815082ae}} 
+\index{Main\+Window@{Main\+Window}!timer\+Event@{timer\+Event}}
+\index{timer\+Event@{timer\+Event}!Main\+Window@{Main\+Window}}
+\subsubsection{\texorpdfstring{timer\+Event}{timerEvent}}
+{\footnotesize\ttfamily void Main\+Window\+::timer\+Event (\begin{DoxyParamCaption}\item[{Q\+Timer\+Event $\ast$}]{event }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [slot]}}
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em min} & recebe o valor mostrado ao lado do slider do valor mínimo. \\
+\hline
+{\em max} & recebe o valor mostrado ao lado do slider do valor máximo. \\
+\hline
+{\em mensagem} & exibe uma caixa em forma de pop-\/up contendo uma mensagem do sistema. \\
+\hline
+{\em textomensagem} & recebe uma mensagem de erro para ser exibida na caixa de diálogo.\\
+\hline
+\end{DoxyParams}
+mensagem.\+set\+Text(textomensagem) Recupera o texto armazenado em textomensagem e manda para a caixa de diálogo.
+
+mensagem.\+exec() Ativa a caixa de diálogo com um erro do sistema.
+
+A documentação para esta classe foi gerada a partir dos seguintes ficheiros\+:\begin{DoxyCompactItemize}
+\item 
+mainwindow.\+h\item 
+mainwindow.\+cpp\end{DoxyCompactItemize}
